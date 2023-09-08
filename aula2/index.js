@@ -80,3 +80,93 @@ voteId = false
 let canPass = !canVote
 
 console.log(canPass)
+
+
+// Operador lógico com string
+let orderColor = undefined
+let availableColor = 'white'
+
+let deliveryColor = orderColor || availableColor
+
+console.log(deliveryColor)
+
+
+// If/Else
+let velocity = 120.1
+
+if (velocity > 120) {
+    console.log('You are fast, reduce.') 
+}
+
+else if (velocity > 40 && velocity < 120) { 
+    console.log('Nice velocity!')
+}
+
+else
+    console.log('You are to slow.');
+
+
+// Switch/Case
+let airport = 'SP'
+
+switch (airport) {
+    case 'GUA':
+        
+        console.log('Guarulhos')
+        break;
+
+    case 'SP':
+        
+        console.log('Congonhas')
+        break;
+
+    default:
+
+        console.log('Airport not found')
+        break;
+}
+
+// For loop
+for (let i = 0; i <= 10; i++) {
+    console.log('Numero: ' + i)
+    
+}
+
+// While loop
+i = 10
+
+while (i >= 0) {
+
+    console.log('Numero', i)
+
+    i--    
+}
+
+
+// Do While loop
+i = 10
+
+do {
+    console.log('Numero', i)
+    i++
+} while (i <= 20);
+
+
+// For in
+const myCar = {
+    model: 'mercedez',
+    year: 2023
+}
+
+for (let i in myCar) 
+    console.log(i, myCar[i])
+
+
+// For of
+const names = ['raf', 'john', 'abe']
+
+for( let i of names)
+    if(i === 2) break
+    console.log(i)
+
+
