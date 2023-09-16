@@ -8,10 +8,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Desafio 2!!!!</h1>
+    <div id="calculator-box">
+        <div id="result-box">
+            <a id="result">0000</a>
+        </div>
 
-    <h2>The result is: <span id="result"></span></h2>
-    
-    <script src="index.js"></script>
+        <input type="number" id="num1">
+
+        <input type="radio" id="sum" name="operator" value="sum">
+        <label for="sum">+</label><br>
+
+        <input type="radio" id="sub" name="operator" value="sub">
+        <label for="sub">-</label><br>
+
+        <input type="radio" id="mult" name="operator" value="mult">
+        <label for="mult">*</label><br>
+
+        <input type="radio" id="div" name="operator" value="div">
+        <label for="div">/</label><br>
+
+        <input type="number" id="num2">
+
+        <button id="button">Calcular</button>
+    </div>
+    <script src="index.js"></script>		
 </body>
 </html>
