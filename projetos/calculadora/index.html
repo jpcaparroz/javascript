@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>🏆 Desafio 2</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="calculator-box">
-        <div id="result-box">
-            <a id="result">0000</a>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="result-box">
+        <a id="result"></a>
+      </div>
+
+      <div class="calculator-box">
+        <input type="number" id="num1" />
+
+        <div class="operators">
+          <input type="radio" id="sum" name="operator" value="sum" checked />
+          <label for="sum">+</label>
+
+          <input type="radio" id="sub" name="operator" value="sub" />
+          <label for="sub">-</label>
+
+          <input type="radio" id="mult" name="operator" value="mult" />
+          <label for="mult">*</label>
+
+          <input type="radio" id="div" name="operator" value="div" />
+          <label for="div">/</label>
         </div>
+        <input type="number" id="num2" />
 
-        <input type="number" id="num1">
-
-        <input type="radio" id="sum" name="operator" value="sum">
-        <label for="sum">+</label><br>
-
-        <input type="radio" id="sub" name="operator" value="sub">
-        <label for="sub">-</label><br>
-
-        <input type="radio" id="mult" name="operator" value="mult">
-        <label for="mult">*</label><br>
-
-        <input type="radio" id="div" name="operator" value="div">
-        <label for="div">/</label><br>
-
-        <input type="number" id="num2">
-
-        <button id="button">Calcular</button>
+        <button id="button" onclick="outcome()" type="button">Calcular</button>
+      </div>
     </div>
-    <script src="index.js"></script>		
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
