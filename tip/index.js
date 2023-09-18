@@ -10,7 +10,7 @@ function update() {
   let personPlural
 
   if(splitValue > 1) {
-    personPlural = ` Person's`
+    personPlural = ` Peoples`
   } else {
     personPlural = ` Person`
   }
