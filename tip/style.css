@@ -95,12 +95,16 @@ input::-webkit-inner-spin-button {
 }
 
 .total-box,
-.each-box {
+.each-box,
+.tip-total-box {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 
   align-items: center;
 }
+
+
 
 #bill {
   width: 25%;
